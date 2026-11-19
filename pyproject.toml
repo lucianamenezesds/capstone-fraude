@@ -1,0 +1,22 @@
+[project]
+name = "capstone-fraude"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Luciana Menezes", email = "luciana.menezes@superlogica.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "notebook>=7.6.5",
+    "pandas>=3.1.1",
+]
+
+[project.scripts]
+capstone-fraude = "capstone_fraude:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
